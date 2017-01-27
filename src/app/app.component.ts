@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.apiService.getProfile()
+    this.apiService.getPosts()
       .subscribe(posts => {
         this.posts = posts.json();
         this.dataIsAvailable = true;

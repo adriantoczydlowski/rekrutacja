@@ -14,7 +14,7 @@ export class ApiService {
 
   constructor(private http: Http) { }
 
-  getProfile() {
+  getPosts() {
     return this.http.get(`${BASE_URL}/posts?author=${user}`);
   }
 
